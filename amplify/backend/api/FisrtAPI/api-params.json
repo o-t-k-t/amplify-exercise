@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "aries27929d03",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "FisrtAPI",
+    "apiName": "FisrtAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "aries27929d03"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "aries-local-20190720165048-authRole",
+        "unAuthRoleName": "aries-local-20190720165048-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "aries27929d03",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
